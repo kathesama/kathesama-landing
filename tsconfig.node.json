@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "strict": true,
+    "types": ["node"]
+  },
+  "include": [
+    "vite.config.ts",
+    "scripts/**/*.ts",
+    "src/content/blog/assets.ts",
+    "src/content/blog/catalog.ts",
+    "src/content/blog/types.ts",
+    "src/content/blog/frontMatter.ts",
+    "src/content/blog/validation.ts",
+    "src/features/architecture/architecture.schema.ts",
+    "src/features/architecture/architecture.types.ts",
+    "src/features/i18n/language.ts",
+    "src/features/seo/pageMetadata.ts"
+  ]
+}

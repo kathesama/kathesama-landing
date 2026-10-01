@@ -1,0 +1,121 @@
+{
+  "feedUrl": "https://medium.com/feed/@kathesama",
+  "capturedOn": "2026-09-30",
+  "posts": [
+    {
+      "id": "juana-build-01",
+      "postId": "c5a60ad26791",
+      "sourceUrl": "https://medium.com/@kathesama/im-building-a-personal-ai-that-lives-on-my-pc-here-s-what-i-ve-learned-so-far-c5a60ad26791",
+      "localDocuments": [
+        "content/blog/articles/building-juana-self-hosted-ai.en.md",
+        "content/blog/articles/building-juana-self-hosted-ai.es.md"
+      ]
+    },
+    {
+      "id": "juana-build-02",
+      "postId": "c5eb39f8c320",
+      "sourceUrl": "https://medium.com/@kathesama/i-gave-my-local-ai-a-brain-how-i-designed-the-orchestration-layer-c5eb39f8c320",
+      "localDocuments": [
+        "content/blog/articles/juana-orchestration-layer.en.md",
+        "content/blog/articles/juana-orchestration-layer.es.md"
+      ]
+    },
+    {
+      "id": "juana-build-03",
+      "postId": "2085faacab7f",
+      "sourceUrl": "https://medium.com/@kathesama/from-24-seconds-to-2-how-i-optimized-response-times-in-a-self-hosted-ai-assistant-2085faacab7f",
+      "localDocuments": [
+        "content/blog/articles/self-hosted-ai-latency-24-to-2.en.md",
+        "content/blog/articles/self-hosted-ai-latency-24-to-2.es.md"
+      ]
+    },
+    {
+      "id": "juana-build-04",
+      "postId": "c6e711c0ff8a",
+      "sourceUrl": "https://medium.com/@kathesama/when-your-ai-has-photographic-memory-but-no-understanding-designing-curiosity-driven-knowledge-c6e711c0ff8a",
+      "localDocuments": [
+        "content/blog/articles/curiosity-driven-knowledge-enrichment.en.md",
+        "content/blog/articles/curiosity-driven-knowledge-enrichment.es.md"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/1024/1*XzB-Tuqt_QMVzeY6qk1-gw.png",
+      "localPath": "public/images/blog/building-juana-self-hosted-ai/figure-01.png",
+      "mimeType": "image/png",
+      "bytes": 1196347,
+      "sha256": "5c5a927f2777abe855da6931b8503b85cf8a8101cb30b9c818e4edae06a8fa19"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/1024/1*MEmuE04cXoLQmh2mwd989A.png",
+      "localPath": "public/images/blog/building-juana-self-hosted-ai/figure-02.png",
+      "mimeType": "image/png",
+      "bytes": 1203780,
+      "sha256": "b8103f67623f3e51c2b63e46e6dca0c4b1857cfbc26d55304f0ab63e11ca71ea"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/1024/1*uhCOMBtUBEASO8pDvuS5XA.png",
+      "localPath": "public/images/blog/building-juana-self-hosted-ai/figure-03.png",
+      "mimeType": "image/png",
+      "bytes": 2161450,
+      "sha256": "95beaaf21e1f94c1757872745af5975f9045d3535e15b590b4825645bea93f3b"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/1024/1*8LhhgIZ9yZ0dmaL7zsLaOA.png",
+      "localPath": "public/images/blog/juana-orchestration-layer/figure-01.png",
+      "mimeType": "image/png",
+      "bytes": 1353695,
+      "sha256": "7025e168f1c7bc63e3a88b77459f42e8b1e257b203a1347044424c0b9f8cf5dd"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/900/1*XZmBmegI0f086n456rzG-g.png",
+      "localPath": "public/images/blog/juana-orchestration-layer/figure-02.png",
+      "mimeType": "image/png",
+      "bytes": 131392,
+      "sha256": "a0c818e857b5ebf25d96f9e69e39932fda5b223c3f99cfbd71e61bd48ea415b0"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/900/1*1g0wAI9_-h_lVyBKziFiEQ.png",
+      "localPath": "public/images/blog/juana-orchestration-layer/figure-03.png",
+      "mimeType": "image/png",
+      "bytes": 177941,
+      "sha256": "6ae66d438c9e79343780ec7cd6750048398833afc3f749ec2c0009bf9d0e907e"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/681/1*R0Jev6tbp4mE_bKB0VwgAA.png",
+      "localPath": "public/images/blog/self-hosted-ai-latency-24-to-2/figure-01.png",
+      "mimeType": "image/png",
+      "bytes": 18391,
+      "sha256": "442aa5d9fd4727cba062b2e4f9f6c67534e0f61cb6870416aba7e7c7fd992252"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/674/1*B8vn6E7ecWnCO16WjNCHCQ.png",
+      "localPath": "public/images/blog/self-hosted-ai-latency-24-to-2/figure-02.png",
+      "mimeType": "image/png",
+      "bytes": 26265,
+      "sha256": "f13b136f72e8909ef0322f791ada674efbe72a4f36130f5d4920e45580bf7043"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/683/1*5CIWQPtLwnQGV0IH31cNZQ.png",
+      "localPath": "public/images/blog/self-hosted-ai-latency-24-to-2/figure-03.png",
+      "mimeType": "image/png",
+      "bytes": 20817,
+      "sha256": "184e7a9a9557ae19ab004d8758c9ae50c72cae126ba47cff4fa4ae69abedff8d"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/682/1*8HEMvIFj5VOvgc939HA8WQ.png",
+      "localPath": "public/images/blog/self-hosted-ai-latency-24-to-2/figure-04.png",
+      "mimeType": "image/png",
+      "bytes": 19140,
+      "sha256": "8b7db71db32ce079137b9948948ee3f95ae3bd9f68d19acdeec18489b9b6d81f"
+    },
+    {
+      "sourceUrl": "https://cdn-images-1.medium.com/max/1024/1*zW5IaUpykMYsBEaR1ZUWBg.png",
+      "localPath": "public/images/blog/curiosity-driven-knowledge-enrichment/cdke-architecture.png",
+      "mimeType": "image/png",
+      "bytes": 193759,
+      "sha256": "1a81d463469d7273dd6c94524fd1c31ea67c38c2c41093e12031f9e8cb9cd454"
+    }
+  ]
+}

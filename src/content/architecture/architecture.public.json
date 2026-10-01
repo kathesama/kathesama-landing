@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "person",
+      "label": { "en": "Person", "es": "Persona" },
+      "description": { "en": "Starts an intentional interaction", "es": "Inicia una interacción intencional" },
+      "capability": { "en": "Supplies intent and explicit approval", "es": "Aporta intención y aprobación explícita" },
+      "category": "experience",
+      "evidence": "verified",
+      "position": { "x": 0, "y": 320 }
+    },
+    {
+      "id": "web-pwa",
+      "label": { "en": "Web experience", "es": "Experiencia web" },
+      "description": { "en": "Text-first interface", "es": "Interfaz centrada en texto" },
+      "capability": { "en": "Exchanges conversation updates", "es": "Intercambia actualizaciones de conversación" },
+      "category": "experience",
+      "evidence": "verified",
+      "position": { "x": 240, "y": 220 }
+    },
+    {
+      "id": "voice",
+      "label": { "en": "Voice experience", "es": "Experiencia de voz" },
+      "description": { "en": "Spoken interaction boundary", "es": "Frontera de interacción hablada" },
+      "capability": { "en": "Turns voice into a conversational turn and back", "es": "Convierte voz en un turno y viceversa" },
+      "category": "experience",
+      "evidence": "verified",
+      "position": { "x": 240, "y": 440 }
+    },
+    {
+      "id": "gateway",
+      "label": { "en": "Experience gateway", "es": "Puerta de experiencia" },
+      "description": { "en": "Public request boundary", "es": "Frontera pública de solicitudes" },
+      "capability": { "en": "Routes safe user interactions", "es": "Dirige interacciones seguras" },
+      "category": "access",
+      "evidence": "verified",
+      "position": { "x": 500, "y": 320 }
+    },
+    {
+      "id": "identity",
+      "label": { "en": "Identity boundary", "es": "Frontera de identidad" },
+      "description": { "en": "Confirms who may continue", "es": "Confirma quién puede continuar" },
+      "capability": { "en": "Establishes a trusted user context", "es": "Establece un contexto confiable" },
+      "category": "access",
+      "evidence": "implemented-in-code",
+      "position": { "x": 500, "y": 70 }
+    },
+    {
+      "id": "soul",
+      "label": { "en": "Conversation core", "es": "Núcleo conversacional" },
+      "description": { "en": "Coordinates each turn", "es": "Coordina cada turno" },
+      "capability": { "en": "Maintains conversational intent", "es": "Mantiene la intención conversacional" },
+      "category": "orchestration",
+      "evidence": "verified",
+      "position": { "x": 760, "y": 300 }
+    },
+    {
+      "id": "session",
+      "label": { "en": "Session context", "es": "Contexto de sesión" },
+      "description": { "en": "Keeps short-lived continuity", "es": "Mantiene continuidad temporal" },
+      "capability": { "en": "Provides the active turn context", "es": "Aporta el contexto activo" },
+      "category": "context",
+      "evidence": "implemented-in-code",
+      "position": { "x": 760, "y": 70 }
+    },
+    {
+      "id": "planner",
+      "label": { "en": "Planning", "es": "Planificación" },
+      "description": { "en": "Chooses the next safe step", "es": "Elige el próximo paso seguro" },
+      "capability": { "en": "Decomposes intent into bounded work", "es": "Descompone intención en trabajo acotado" },
+      "category": "orchestration",
+      "evidence": "verified",
+      "position": { "x": 1020, "y": 300 }
+    },
+    {
+      "id": "memory",
+      "label": { "en": "Memory", "es": "Memoria" },
+      "description": { "en": "Recalls relevant prior context", "es": "Recupera contexto previo relevante" },
+      "capability": { "en": "Stores approved durable knowledge", "es": "Guarda conocimiento duradero aprobado" },
+      "category": "context",
+      "evidence": "implemented-in-code",
+      "position": { "x": 1020, "y": 70 }
+    },
+    {
+      "id": "runtime",
+      "label": { "en": "Execution runtime", "es": "Runtime de ejecución" },
+      "description": { "en": "Executes planned reasoning work", "es": "Ejecuta el trabajo de razonamiento planificado" },
+      "capability": { "en": "Coordinates intelligence and capabilities", "es": "Coordina inteligencia y capacidades" },
+      "category": "intelligence",
+      "evidence": "verified",
+      "position": { "x": 1280, "y": 300 }
+    },
+    {
+      "id": "inference",
+      "label": { "en": "Language intelligence", "es": "Inteligencia de lenguaje" },
+      "description": { "en": "Produces language and reasoning output", "es": "Produce lenguaje y razonamiento" },
+      "capability": { "en": "Returns a bounded result", "es": "Devuelve un resultado acotado" },
+      "category": "intelligence",
+      "evidence": "verified",
+      "position": { "x": 1540, "y": 200 }
+    },
+    {
+      "id": "capabilities",
+      "label": { "en": "Capability catalog", "es": "Catálogo de capacidades" },
+      "description": { "en": "Describes available safe abilities", "es": "Describe capacidades seguras disponibles" },
+      "capability": { "en": "Exposes only approved operations", "es": "Expone solo operaciones aprobadas" },
+      "category": "capability",
+      "evidence": "implemented-in-code",
+      "position": { "x": 1540, "y": 390 }
+    },
+    {
+      "id": "actions",
+      "label": { "en": "Action approval", "es": "Aprobación de acciones" },
+      "description": { "en": "Gates higher-impact work", "es": "Controla trabajo de mayor impacto" },
+      "capability": { "en": "Requires explicit approval when applicable", "es": "Requiere aprobación explícita cuando corresponde" },
+      "category": "assurance",
+      "evidence": "conditional",
+      "position": { "x": 1800, "y": 390 }
+    },
+    {
+      "id": "knowledge-worker",
+      "label": { "en": "Knowledge worker", "es": "Trabajador de conocimiento" },
+      "description": { "en": "Organizes and enriches information", "es": "Organiza y enriquece información" },
+      "capability": { "en": "Prepares reusable knowledge", "es": "Prepara conocimiento reutilizable" },
+      "category": "knowledge",
+      "evidence": "implemented-in-code",
+      "position": { "x": 1280, "y": 590 }
+    },
+    {
+      "id": "tasking",
+      "label": { "en": "Background tasking", "es": "Tareas en segundo plano" },
+      "description": { "en": "Coordinates deferred work", "es": "Coordina trabajo diferido" },
+      "capability": { "en": "Schedules bounded background steps", "es": "Programa pasos acotados en segundo plano" },
+      "category": "orchestration",
+      "evidence": "implemented-in-code",
+      "position": { "x": 1540, "y": 590 }
+    },
+    {
+      "id": "events",
+      "label": { "en": "Event backbone", "es": "Columna de eventos" },
+      "description": { "en": "Carries asynchronous signals", "es": "Transporta señales asíncronas" },
+      "capability": { "en": "Decouples follow-up work", "es": "Desacopla trabajo posterior" },
+      "category": "platform",
+      "evidence": "implemented-in-code",
+      "position": { "x": 1020, "y": 560 }
+    },
+    {
+      "id": "data",
+      "label": { "en": "Protected data", "es": "Datos protegidos" },
+      "description": { "en": "Persists approved information", "es": "Persiste información aprobada" },
+      "capability": { "en": "Provides durable application state", "es": "Aporta estado duradero" },
+      "category": "platform",
+      "evidence": "implemented-in-code",
+      "position": { "x": 760, "y": 650 }
+    },
+    {
+      "id": "observability",
+      "label": { "en": "Observability", "es": "Observabilidad" },
+      "description": { "en": "Receives operational signals", "es": "Recibe señales operativas" },
+      "capability": { "en": "Supports diagnosis without exposing content", "es": "Ayuda al diagnóstico sin exponer contenido" },
+      "category": "assurance",
+      "evidence": "implemented-in-code",
+      "position": { "x": 1280, "y": 790 }
+    }
+  ],
+  "edges": [
+    { "id": "person-web", "source": "person", "target": "web-pwa", "label": { "en": "typed intent", "es": "intención escrita" }, "type": "sync" },
+    { "id": "web-person", "source": "web-pwa", "target": "person", "label": { "en": "progressive answer", "es": "respuesta progresiva" }, "type": "stream" },
+    { "id": "person-voice", "source": "person", "target": "voice", "label": { "en": "spoken intent", "es": "intención hablada" }, "type": "stream" },
+    { "id": "voice-person", "source": "voice", "target": "person", "label": { "en": "spoken answer", "es": "respuesta hablada" }, "type": "stream" },
+    { "id": "web-gateway", "source": "web-pwa", "target": "gateway", "label": { "en": "conversation request", "es": "solicitud conversacional" }, "type": "stream" },
+    { "id": "gateway-web", "source": "gateway", "target": "web-pwa", "label": { "en": "response updates", "es": "actualizaciones de respuesta" }, "type": "stream" },
+    { "id": "voice-gateway", "source": "voice", "target": "gateway", "label": { "en": "voice turn", "es": "turno de voz" }, "type": "stream" },
+    { "id": "gateway-voice", "source": "gateway", "target": "voice", "label": { "en": "answer stream", "es": "flujo de respuesta" }, "type": "stream" },
+    { "id": "gateway-identity", "source": "gateway", "target": "identity", "label": { "en": "identity check", "es": "verificación de identidad" }, "type": "trust" },
+    { "id": "identity-gateway", "source": "identity", "target": "gateway", "label": { "en": "trusted context", "es": "contexto confiable" }, "type": "trust" },
+    { "id": "gateway-soul", "source": "gateway", "target": "soul", "label": { "en": "accepted turn", "es": "turno aceptado" }, "type": "sync" },
+    { "id": "soul-gateway", "source": "soul", "target": "gateway", "label": { "en": "conversational result", "es": "resultado conversacional" }, "type": "stream" },
+    { "id": "soul-session", "source": "soul", "target": "session", "label": { "en": "active context read", "es": "lectura de contexto activo" }, "type": "data" },
+    { "id": "session-soul", "source": "session", "target": "soul", "label": { "en": "session context", "es": "contexto de sesión" }, "type": "data" },
+    { "id": "soul-planner", "source": "soul", "target": "planner", "label": { "en": "bounded intent", "es": "intención acotada" }, "type": "sync" },
+    { "id": "planner-soul", "source": "planner", "target": "soul", "label": { "en": "composed result", "es": "resultado compuesto" }, "type": "stream" },
+    { "id": "planner-memory", "source": "planner", "target": "memory", "label": { "en": "relevant-context query", "es": "consulta de contexto relevante" }, "type": "data" },
+    { "id": "memory-planner", "source": "memory", "target": "planner", "label": { "en": "grounded context", "es": "contexto fundamentado" }, "type": "data" },
+    { "id": "planner-runtime", "source": "planner", "target": "runtime", "label": { "en": "execution request", "es": "solicitud de ejecución" }, "type": "sync" },
+    { "id": "runtime-planner", "source": "runtime", "target": "planner", "label": { "en": "execution result", "es": "resultado de ejecución" }, "type": "stream" },
+    { "id": "runtime-inference", "source": "runtime", "target": "inference", "label": { "en": "reasoning request", "es": "solicitud de razonamiento" }, "type": "stream" },
+    { "id": "inference-runtime", "source": "inference", "target": "runtime", "label": { "en": "generated result", "es": "resultado generado" }, "type": "stream" },
+    { "id": "runtime-capabilities", "source": "runtime", "target": "capabilities", "label": { "en": "capability request", "es": "solicitud de capacidad" }, "type": "sync" },
+    { "id": "capabilities-runtime", "source": "capabilities", "target": "runtime", "label": { "en": "capability result", "es": "resultado de capacidad" }, "type": "sync" },
+    { "id": "capabilities-actions", "source": "capabilities", "target": "actions", "label": { "en": "approval request", "es": "solicitud de aprobación" }, "type": "trust" },
+    { "id": "actions-capabilities", "source": "actions", "target": "capabilities", "label": { "en": "approval decision", "es": "decisión de aprobación" }, "type": "trust" },
+    { "id": "soul-events", "source": "soul", "target": "events", "label": { "en": "completed-turn event", "es": "evento de turno completado" }, "type": "async" },
+    { "id": "events-memory", "source": "events", "target": "memory", "label": { "en": "memory candidate", "es": "candidato a memoria" }, "type": "async" },
+    { "id": "memory-data", "source": "memory", "target": "data", "label": { "en": "approved memory", "es": "memoria aprobada" }, "type": "data" },
+    { "id": "data-memory", "source": "data", "target": "memory", "label": { "en": "durable context", "es": "contexto duradero" }, "type": "data" },
+    { "id": "gateway-knowledge", "source": "gateway", "target": "knowledge-worker", "label": { "en": "knowledge input", "es": "entrada de conocimiento" }, "type": "sync" },
+    { "id": "knowledge-data", "source": "knowledge-worker", "target": "data", "label": { "en": "structured knowledge", "es": "conocimiento estructurado" }, "type": "data" },
+    { "id": "data-knowledge", "source": "data", "target": "knowledge-worker", "label": { "en": "source context", "es": "contexto fuente" }, "type": "data" },
+    { "id": "tasking-events", "source": "tasking", "target": "events", "label": { "en": "deferred task", "es": "tarea diferida" }, "type": "async" },
+    { "id": "events-knowledge", "source": "events", "target": "knowledge-worker", "label": { "en": "enrichment request", "es": "solicitud de enriquecimiento" }, "type": "async" },
+    { "id": "knowledge-capabilities", "source": "knowledge-worker", "target": "capabilities", "label": { "en": "bounded capability", "es": "capacidad acotada" }, "type": "sync" },
+    { "id": "inference-knowledge", "source": "inference", "target": "knowledge-worker", "label": { "en": "enrichment result", "es": "resultado de enriquecimiento" }, "type": "stream" },
+    { "id": "gateway-observability", "source": "gateway", "target": "observability", "label": { "en": "request signal", "es": "señal de solicitud" }, "type": "telemetry" },
+    { "id": "soul-observability", "source": "soul", "target": "observability", "label": { "en": "turn signal", "es": "señal de turno" }, "type": "telemetry" },
+    { "id": "runtime-observability", "source": "runtime", "target": "observability", "label": { "en": "execution signal", "es": "señal de ejecución" }, "type": "telemetry" },
+    { "id": "memory-observability", "source": "memory", "target": "observability", "label": { "en": "memory signal", "es": "señal de memoria" }, "type": "telemetry" },
+    { "id": "actions-observability", "source": "actions", "target": "observability", "label": { "en": "approval signal", "es": "señal de aprobación" }, "type": "telemetry" },
+    { "id": "knowledge-observability", "source": "knowledge-worker", "target": "observability", "label": { "en": "knowledge signal", "es": "señal de conocimiento" }, "type": "telemetry" }
+  ],
+  "flows": [
+    {
+      "id": "real-time-chat",
+      "title": { "en": "Real-time chat", "es": "Chat en tiempo real" },
+      "summary": { "en": "Shows the trusted request boundary, turn coordination, reasoning, and progressive return", "es": "Muestra la frontera confiable de solicitud, la coordinación del turno, el razonamiento y el retorno progresivo" },
+      "outcome": { "en": "A typed question becomes a progressive, contextual answer", "es": "Una pregunta escrita se convierte en una respuesta progresiva y contextual" },
+      "evidence": "verified",
+      "steps": ["person", "web-pwa", "gateway", "identity", "gateway", "soul", "planner", "runtime", "inference", "runtime", "planner", "soul", "gateway", "web-pwa", "person"],
+      "edgeIds": ["person-web", "web-gateway", "gateway-identity", "identity-gateway", "gateway-soul", "soul-planner", "planner-runtime", "runtime-inference", "inference-runtime", "runtime-planner", "planner-soul", "soul-gateway", "gateway-web", "web-person"],
+      "stages": [
+        { "id": "ask", "label": { "en": "Ask", "es": "Preguntar" }, "nodeIds": ["person", "web-pwa"] },
+        { "id": "establish-trust", "label": { "en": "Establish trust", "es": "Establecer confianza" }, "nodeIds": ["gateway", "identity"] },
+        { "id": "plan", "label": { "en": "Plan", "es": "Planificar" }, "nodeIds": ["soul", "planner"] },
+        { "id": "reason", "label": { "en": "Reason", "es": "Razonar" }, "nodeIds": ["runtime", "inference"] },
+        { "id": "stream-answer", "label": { "en": "Stream answer", "es": "Transmitir respuesta" }, "nodeIds": ["runtime", "planner", "soul", "gateway", "web-pwa", "person"] }
+      ],
+      "primary": true
+    },
+    {
+      "id": "memory-grounded",
+      "title": { "en": "Memory-grounded answer", "es": "Respuesta con memoria" },
+      "summary": { "en": "Adds a bounded recall step to the conversational path without describing storage internals", "es": "Agrega una recuperación acotada al recorrido conversacional sin describir el almacenamiento interno" },
+      "outcome": { "en": "Relevant prior context informs the answer without exposing storage details", "es": "El contexto previo relevante informa la respuesta sin exponer detalles de almacenamiento" },
+      "evidence": "implemented-in-code",
+      "steps": ["person", "web-pwa", "gateway", "identity", "gateway", "soul", "planner", "memory", "planner", "runtime", "inference", "runtime", "planner", "soul", "gateway", "web-pwa", "person"],
+      "edgeIds": ["person-web", "web-gateway", "gateway-identity", "identity-gateway", "gateway-soul", "soul-planner", "planner-memory", "memory-planner", "planner-runtime", "runtime-inference", "inference-runtime", "runtime-planner", "planner-soul", "soul-gateway", "gateway-web", "web-person"],
+      "stages": [
+        { "id": "ask", "label": { "en": "Ask", "es": "Preguntar" }, "nodeIds": ["person", "web-pwa", "gateway"] },
+        { "id": "recall", "label": { "en": "Recall", "es": "Recuperar" }, "nodeIds": ["planner", "memory"] },
+        { "id": "plan", "label": { "en": "Plan with context", "es": "Planificar con contexto" }, "nodeIds": ["planner", "runtime"] },
+        { "id": "reason", "label": { "en": "Reason", "es": "Razonar" }, "nodeIds": ["runtime", "inference"] },
+        { "id": "answer", "label": { "en": "Answer", "es": "Responder" }, "nodeIds": ["runtime", "planner", "soul", "gateway", "web-pwa", "person"] }
+      ]
+    },
+    {
+      "id": "tool-assisted",
+      "title": { "en": "Tool-assisted answer", "es": "Respuesta asistida por capacidades" },
+      "summary": { "en": "Shows how planning may select a bounded capability and incorporate its result", "es": "Muestra cómo la planificación puede elegir una capacidad acotada e incorporar su resultado" },
+      "outcome": { "en": "A bounded capability contributes to the response", "es": "Una capacidad acotada contribuye a la respuesta" },
+      "evidence": "implemented-in-code",
+      "steps": ["person", "web-pwa", "gateway", "identity", "gateway", "soul", "planner", "runtime", "capabilities", "runtime", "planner", "soul", "gateway", "web-pwa", "person"],
+      "edgeIds": ["person-web", "web-gateway", "gateway-identity", "identity-gateway", "gateway-soul", "soul-planner", "planner-runtime", "runtime-capabilities", "capabilities-runtime", "runtime-planner", "planner-soul", "soul-gateway", "gateway-web", "web-person"],
+      "stages": [
+        { "id": "understand", "label": { "en": "Understand", "es": "Comprender" }, "nodeIds": ["person", "web-pwa", "gateway", "soul", "planner"] },
+        { "id": "select-capability", "label": { "en": "Select capability", "es": "Elegir capacidad" }, "nodeIds": ["runtime", "capabilities"] },
+        { "id": "execute", "label": { "en": "Execute", "es": "Ejecutar" }, "nodeIds": ["capabilities", "runtime"] },
+        { "id": "compose", "label": { "en": "Compose", "es": "Componer" }, "nodeIds": ["planner", "soul"] },
+        { "id": "answer", "label": { "en": "Answer", "es": "Responder" }, "nodeIds": ["gateway", "web-pwa", "person"] }
+      ]
+    },
+    {
+      "id": "approved-action",
+      "title": { "en": "Approved action", "es": "Acción aprobada" },
+      "summary": { "en": "Shows the approval gate around a capability whose effect is not read-only", "es": "Muestra el control de aprobación alrededor de una capacidad cuyo efecto no es solo lectura" },
+      "outcome": { "en": "Higher-impact work continues only after an explicit decision", "es": "El trabajo de mayor impacto continúa solo después de una decisión explícita" },
+      "evidence": "conditional",
+      "steps": ["person", "web-pwa", "gateway", "identity", "gateway", "soul", "planner", "runtime", "capabilities", "actions", "capabilities", "runtime", "planner", "soul", "gateway", "web-pwa", "person"],
+      "edgeIds": ["person-web", "web-gateway", "gateway-identity", "identity-gateway", "gateway-soul", "soul-planner", "planner-runtime", "runtime-capabilities", "capabilities-actions", "actions-capabilities", "capabilities-runtime", "runtime-planner", "planner-soul", "soul-gateway", "gateway-web", "web-person"],
+      "stages": [
+        { "id": "understand", "label": { "en": "Understand", "es": "Comprender" }, "nodeIds": ["person", "web-pwa", "gateway", "soul", "planner"] },
+        { "id": "propose", "label": { "en": "Propose action", "es": "Proponer acción" }, "nodeIds": ["runtime", "capabilities"] },
+        { "id": "request-approval", "label": { "en": "Request approval", "es": "Solicitar aprobación" }, "nodeIds": ["actions"] },
+        { "id": "execute-if-approved", "label": { "en": "Execute if approved", "es": "Ejecutar si se aprueba" }, "nodeIds": ["capabilities", "runtime"] },
+        { "id": "report", "label": { "en": "Report outcome", "es": "Informar resultado" }, "nodeIds": ["planner", "soul", "gateway", "web-pwa", "person"] }
+      ]
+    },
+    {
+      "id": "voice-turn",
+      "title": { "en": "Voice turn", "es": "Turno de voz" },
+      "summary": { "en": "Uses the same trusted conversational path with spoken input and output boundaries", "es": "Usa el mismo recorrido conversacional confiable con fronteras de entrada y salida habladas" },
+      "outcome": { "en": "A spoken request returns as a spoken, contextual answer", "es": "Una solicitud hablada vuelve como respuesta hablada y contextual" },
+      "evidence": "verified",
+      "steps": ["person", "voice", "gateway", "identity", "gateway", "soul", "planner", "runtime", "inference", "runtime", "planner", "soul", "gateway", "voice", "person"],
+      "edgeIds": ["person-voice", "voice-gateway", "gateway-identity", "identity-gateway", "gateway-soul", "soul-planner", "planner-runtime", "runtime-inference", "inference-runtime", "runtime-planner", "planner-soul", "soul-gateway", "gateway-voice", "voice-person"],
+      "stages": [
+        { "id": "speak", "label": { "en": "Speak", "es": "Hablar" }, "nodeIds": ["person", "voice"] },
+        { "id": "establish-trust", "label": { "en": "Establish trust", "es": "Establecer confianza" }, "nodeIds": ["gateway", "identity"] },
+        { "id": "plan", "label": { "en": "Plan", "es": "Planificar" }, "nodeIds": ["soul", "planner"] },
+        { "id": "reason", "label": { "en": "Reason", "es": "Razonar" }, "nodeIds": ["runtime", "inference"] },
+        { "id": "speak-answer", "label": { "en": "Speak answer", "es": "Responder con voz" }, "nodeIds": ["runtime", "planner", "soul", "gateway", "voice", "person"] }
+      ]
+    },
+    {
+      "id": "post-turn-memory",
+      "title": { "en": "Post-turn memory", "es": "Memoria posterior al turno" },
+      "summary": { "en": "Separates the completed conversation from asynchronous memory evaluation", "es": "Separa la conversación completada de la evaluación asíncrona de memoria" },
+      "outcome": { "en": "A completed turn produces an approved durable memory candidate", "es": "Un turno completado produce un candidato aprobado de memoria duradera" },
+      "evidence": "implemented-in-code",
+      "steps": ["person", "web-pwa", "gateway", "soul", "planner", "runtime", "inference", "runtime", "planner", "soul", "events", "memory", "data"],
+      "edgeIds": ["person-web", "web-gateway", "gateway-soul", "soul-planner", "planner-runtime", "runtime-inference", "inference-runtime", "runtime-planner", "planner-soul", "soul-events", "events-memory", "memory-data"],
+      "stages": [
+        { "id": "complete-turn", "label": { "en": "Complete turn", "es": "Completar turno" }, "nodeIds": ["person", "web-pwa", "gateway", "soul", "planner", "runtime", "inference"] },
+        { "id": "emit-event", "label": { "en": "Emit event", "es": "Emitir evento" }, "nodeIds": ["soul", "events"] },
+        { "id": "evaluate-memory", "label": { "en": "Evaluate memory", "es": "Evaluar memoria" }, "nodeIds": ["events", "memory"] },
+        { "id": "persist", "label": { "en": "Persist approved context", "es": "Persistir contexto aprobado" }, "nodeIds": ["memory", "data"] }
+      ]
+    },
+    {
+      "id": "knowledge-ingestion",
+      "title": { "en": "Knowledge ingestion", "es": "Ingesta de conocimiento" },
+      "summary": { "en": "Shows a safe conceptual path from user-provided material to recallable context", "es": "Muestra un recorrido conceptual seguro desde material aportado hasta contexto recuperable" },
+      "outcome": { "en": "User-provided material becomes reusable, protected context", "es": "El material aportado se vuelve contexto reutilizable y protegido" },
+      "evidence": "implemented-in-code",
+      "steps": ["person", "web-pwa", "gateway", "knowledge-worker", "data", "memory"],
+      "edgeIds": ["person-web", "web-gateway", "gateway-knowledge", "knowledge-data", "data-memory"],
+      "stages": [
+        { "id": "provide-source", "label": { "en": "Provide source", "es": "Aportar fuente" }, "nodeIds": ["person", "web-pwa", "gateway"] },
+        { "id": "organize", "label": { "en": "Organize", "es": "Organizar" }, "nodeIds": ["knowledge-worker"] },
+        { "id": "persist", "label": { "en": "Persist", "es": "Persistir" }, "nodeIds": ["knowledge-worker", "data"] },
+        { "id": "make-recallable", "label": { "en": "Make recallable", "es": "Hacer recuperable" }, "nodeIds": ["data", "memory"] }
+      ]
+    },
+    {
+      "id": "background-enrichment",
+      "title": { "en": "Background enrichment", "es": "Enriquecimiento en segundo plano" },
+      "summary": { "en": "Shows deferred knowledge work as an asynchronous path distinct from an active turn", "es": "Muestra trabajo diferido de conocimiento como un recorrido asíncrono distinto de un turno activo" },
+      "outcome": { "en": "Deferred work enriches stored knowledge without blocking a conversation", "es": "El trabajo diferido enriquece conocimiento sin bloquear una conversación" },
+      "evidence": "implemented-in-code",
+      "steps": ["tasking", "events", "knowledge-worker", "capabilities", "runtime", "inference", "knowledge-worker", "data", "memory"],
+      "edgeIds": ["tasking-events", "events-knowledge", "knowledge-capabilities", "capabilities-runtime", "runtime-inference", "inference-knowledge", "knowledge-data", "data-memory"],
+      "stages": [
+        { "id": "schedule", "label": { "en": "Schedule", "es": "Programar" }, "nodeIds": ["tasking", "events"] },
+        { "id": "gather-context", "label": { "en": "Gather context", "es": "Reunir contexto" }, "nodeIds": ["events", "knowledge-worker", "capabilities"] },
+        { "id": "enrich", "label": { "en": "Enrich", "es": "Enriquecer" }, "nodeIds": ["runtime", "inference", "knowledge-worker"] },
+        { "id": "persist", "label": { "en": "Persist", "es": "Persistir" }, "nodeIds": ["knowledge-worker", "data", "memory"] }
+      ]
+    }
+  ],
+  "lenses": [
+    {
+      "id": "layers",
+      "title": { "en": "Architecture layers", "es": "Capas de arquitectura" },
+      "summary": { "en": "Organizes the public system view from human experience through coordination, intelligence, knowledge, platform, and assurance", "es": "Organiza la vista pública del sistema desde la experiencia humana hasta la coordinación, la inteligencia, el conocimiento, la plataforma y el aseguramiento" },
+      "nodeIds": ["person", "web-pwa", "voice", "gateway", "identity", "soul", "session", "planner", "memory", "runtime", "inference", "capabilities", "actions", "knowledge-worker", "tasking", "events", "data", "observability"],
+      "edgeIds": ["web-gateway", "gateway-soul", "soul-planner", "planner-runtime", "runtime-inference", "runtime-capabilities", "soul-events", "events-memory", "memory-data", "gateway-observability"],
+      "flowIds": ["real-time-chat", "post-turn-memory"],
+      "sections": [
+        { "id": "layer-boundaries", "title": { "en": "Layer boundaries", "es": "Fronteras entre capas" }, "body": { "en": "Each layer exposes a focused responsibility while the graph keeps trust and assurance visible across the whole exchange.", "es": "Cada capa expone una responsabilidad enfocada mientras el grafo mantiene visibles la confianza y el aseguramiento en todo el intercambio." } },
+        { "id": "layer-collaboration", "title": { "en": "Layer collaboration", "es": "Colaboración entre capas" }, "body": { "en": "Directed relationships show how experience, coordination, reasoning, knowledge, and operational signals collaborate without revealing internal layout.", "es": "Las relaciones dirigidas muestran cómo colaboran la experiencia, la coordinación, el razonamiento, el conocimiento y las señales operativas sin revelar la disposición interna." } }
+      ]
+    },
+    {
+      "id": "request-lifecycle",
+      "title": { "en": "Request lifecycle", "es": "Ciclo de vida de una solicitud" },
+      "summary": { "en": "Follows an end-to-end conversational request from intent and trust through planning, reasoning, and progressive delivery", "es": "Sigue una solicitud conversacional de extremo a extremo desde la intención y la confianza hasta la planificación, el razonamiento y la entrega progresiva" },
+      "nodeIds": ["person", "web-pwa", "gateway", "identity", "soul", "planner", "runtime", "inference"],
+      "edgeIds": ["person-web", "web-gateway", "gateway-identity", "identity-gateway", "gateway-soul", "soul-planner", "planner-runtime", "runtime-inference", "inference-runtime", "runtime-planner", "planner-soul", "soul-gateway", "gateway-web", "web-person"],
+      "flowIds": ["real-time-chat"],
+      "sections": [
+        { "id": "request-entry", "title": { "en": "Intent and trust", "es": "Intención y confianza" }, "body": { "en": "A person supplies intent through the experience boundary, and identity is established before conversational coordination continues.", "es": "Una persona aporta intención mediante la frontera de experiencia, y la identidad se establece antes de continuar la coordinación conversacional." } },
+        { "id": "request-return", "title": { "en": "Plan and return", "es": "Planificación y retorno" }, "body": { "en": "The accepted turn is planned, reasoned over, composed, and returned as progressive updates along the same public boundary.", "es": "El turno aceptado se planifica, se razona, se compone y vuelve como actualizaciones progresivas por la misma frontera pública." } }
+      ]
+    },
+    {
+      "id": "knowledge-flows",
+      "title": { "en": "Knowledge flows", "es": "Flujos de conocimiento" },
+      "summary": { "en": "Connects document ingestion, retrieval, memory, ranking, bounded tools, and deferred enrichment as distinct public knowledge paths", "es": "Conecta ingesta de documentos, recuperación, memoria, reordenamiento, herramientas acotadas y enriquecimiento diferido como recorridos públicos de conocimiento diferenciados" },
+      "nodeIds": ["gateway", "soul", "planner", "memory", "runtime", "capabilities", "knowledge-worker", "tasking", "events", "data"],
+      "edgeIds": ["planner-memory", "memory-planner", "soul-events", "events-memory", "memory-data", "gateway-knowledge", "knowledge-data", "data-memory", "tasking-events", "events-knowledge", "knowledge-capabilities"],
+      "flowIds": ["memory-grounded", "tool-assisted", "post-turn-memory", "knowledge-ingestion", "background-enrichment"],
+      "sections": [
+        { "id": "grounded-context", "title": { "en": "Grounded context", "es": "Contexto fundamentado" }, "body": { "en": "Memory retrieval and ranking augment planning with approved context, while tool results remain bounded inputs to composition.", "es": "La recuperación de memoria y el reordenamiento amplían la planificación con contexto aprobado, mientras los resultados de herramientas permanecen como entradas acotadas para la composición." } },
+        { "id": "knowledge-preparation", "title": { "en": "Documents and enrichment", "es": "Documentos y enriquecimiento" }, "body": { "en": "Provided material can be organized into reusable knowledge, and deferred work can enrich it without blocking an active conversation.", "es": "El material aportado puede organizarse como conocimiento reutilizable, y el trabajo diferido puede enriquecerlo sin bloquear una conversación activa." } }
+      ]
+    },
+    {
+      "id": "trust",
+      "title": { "en": "Trust boundaries", "es": "Fronteras de confianza" },
+      "summary": { "en": "Highlights conceptual identity checks and explicit approval around higher-impact capabilities", "es": "Destaca verificaciones conceptuales de identidad y la aprobación explícita alrededor de capacidades de mayor impacto" },
+      "nodeIds": ["person", "gateway", "identity", "capabilities", "actions"],
+      "edgeIds": ["gateway-identity", "identity-gateway", "capabilities-actions", "actions-capabilities"],
+      "flowIds": ["real-time-chat", "approved-action"],
+      "sections": [
+        { "id": "trusted-context", "title": { "en": "Trusted context", "es": "Contexto confiable" }, "body": { "en": "The public boundary establishes who may continue and applies least privilege before forwarding an accepted conversational turn.", "es": "La frontera pública establece quién puede continuar y aplica mínimo privilegio antes de remitir un turno conversacional aceptado." } },
+        { "id": "explicit-approval", "title": { "en": "Explicit approval", "es": "Aprobación explícita" }, "body": { "en": "Capabilities with greater impact pause for a human decision and continue only when that decision permits the work.", "es": "Las capacidades de mayor impacto se detienen para una decisión humana y continúan solo cuando esa decisión permite el trabajo." } }
+      ]
+    },
+    {
+      "id": "reliability",
+      "title": { "en": "Reliability and observability", "es": "Confiabilidad y observabilidad" },
+      "summary": { "en": "Shows how operational signals support diagnosis across request, coordination, execution, memory, approval, and knowledge work", "es": "Muestra cómo las señales operativas ayudan al diagnóstico en solicitudes, coordinación, ejecución, memoria, aprobación y trabajo de conocimiento" },
+      "nodeIds": ["gateway", "soul", "runtime", "memory", "actions", "knowledge-worker", "observability"],
+      "edgeIds": ["gateway-observability", "soul-observability", "runtime-observability", "memory-observability", "actions-observability", "knowledge-observability"],
+      "flowIds": ["real-time-chat", "memory-grounded", "tool-assisted"],
+      "sections": [
+        { "id": "operational-signals", "title": { "en": "Operational signals", "es": "Señales operativas" }, "body": { "en": "Major public stages emit diagnostic signals so failures can be located without exposing conversational content.", "es": "Las principales etapas públicas emiten señales de diagnóstico para ubicar fallos sin exponer contenido conversacional." } },
+        { "id": "bounded-failure", "title": { "en": "Bounded failure", "es": "Fallo acotado" }, "body": { "en": "Conceptual timeout, retry, fallback, and audit boundaries complement observability while keeping errors attributable to the affected capability.", "es": "Los límites conceptuales de tiempo de espera, reintento, respuesta alternativa y auditoría complementan la observabilidad y mantienen los errores atribuibles a la capacidad afectada." } }
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": { "en": "Architecture decisions", "es": "Decisiones de arquitectura" },
+      "summary": { "en": "Explains the public rationale and trade-offs behind bounded coordination, asynchronous follow-up, explicit approval, and content-safe diagnosis", "es": "Explica la razón pública y las compensaciones detrás de la coordinación acotada, el trabajo posterior asíncrono, la aprobación explícita y el diagnóstico seguro para el contenido" },
+      "nodeIds": ["gateway", "soul", "planner", "runtime", "capabilities", "actions", "events", "memory", "observability"],
+      "edgeIds": ["gateway-soul", "soul-planner", "planner-runtime", "capabilities-actions", "soul-events", "events-memory", "runtime-observability"],
+      "flowIds": ["real-time-chat", "approved-action", "post-turn-memory"],
+      "sections": [
+        { "id": "separation-rationale", "title": { "en": "Separation of responsibilities", "es": "Separación de responsabilidades" }, "body": { "en": "Conversation coordination, planning, execution, and follow-up knowledge work remain distinct so each concern has a clear public role.", "es": "La coordinación conversacional, la planificación, la ejecución y el trabajo posterior de conocimiento permanecen separados para que cada aspecto tenga un rol público claro." } },
+        { "id": "safety-rationale", "title": { "en": "Safety by boundary", "es": "Seguridad mediante fronteras" }, "body": { "en": "Trust, approval, asynchronous work, and observability are modeled as visible boundaries instead of hidden implementation details.", "es": "La confianza, la aprobación, el trabajo asíncrono y la observabilidad se modelan como fronteras visibles en vez de detalles de implementación ocultos." } }
+      ]
+    },
+    {
+      "id": "capability-status",
+      "title": { "en": "Capability status", "es": "Estado de capacidades" },
+      "summary": { "en": "Uses the evidence labels on the public graph and flows to distinguish verified behavior, implemented capability, and conditional work", "es": "Usa las etiquetas de evidencia del grafo público y sus flujos para distinguir comportamiento verificado, capacidad implementada y trabajo condicional" },
+      "nodeIds": ["web-pwa", "voice", "gateway", "identity", "soul", "planner", "memory", "runtime", "inference", "capabilities", "actions", "knowledge-worker", "tasking", "events", "data", "observability"],
+      "edgeIds": ["web-gateway", "voice-gateway", "gateway-identity", "planner-memory", "runtime-capabilities", "capabilities-actions", "gateway-knowledge", "tasking-events", "gateway-observability"],
+      "flowIds": ["real-time-chat", "memory-grounded", "tool-assisted", "approved-action", "voice-turn", "post-turn-memory", "knowledge-ingestion", "background-enrichment"],
+      "sections": [
+        { "id": "evidence-meaning", "title": { "en": "Evidence meaning", "es": "Significado de la evidencia" }, "body": { "en": "Verified marks exercised public behavior, implemented marks capability represented in code, and conditional marks behavior that depends on an explicit decision.", "es": "Verificado marca comportamiento público ejercitado, implementado marca capacidad representada en código y condicional marca comportamiento que depende de una decisión explícita." } },
+        { "id": "status-scope", "title": { "en": "Status scope", "es": "Alcance del estado" }, "body": { "en": "A future or next status describes curated, not implemented work; it is not a production claim or a statement of broader readiness.", "es": "Un estado futuro o próximo describe trabajo no implementado; no es una afirmación de producción ni de preparación más amplia." } }
+      ]
+    },
+    {
+      "id": "technologies",
+      "title": { "en": "Technology families", "es": "Familias tecnológicas" },
+      "summary": { "en": "Maps broad technology families to the public responsibilities they support without exposing versions or operational configuration", "es": "Relaciona familias tecnológicas amplias con las responsabilidades públicas que sostienen sin exponer versiones ni configuración operativa" },
+      "nodeIds": ["web-pwa", "gateway", "soul", "planner", "memory", "runtime", "inference", "knowledge-worker", "events", "data"],
+      "edgeIds": ["web-gateway", "gateway-soul", "planner-memory", "planner-runtime", "runtime-inference", "soul-events", "knowledge-data", "data-memory"],
+      "flowIds": ["real-time-chat", "memory-grounded", "background-enrichment"],
+      "sections": [
+        { "id": "application-families", "title": { "en": "Application technologies", "es": "Tecnologías de aplicación" }, "body": { "en": "React supports the web experience, while Java with Spring and Python with FastAPI represent complementary service families behind the public responsibilities.", "es": "React sostiene la experiencia web, mientras Java con Spring y Python con FastAPI representan familias de servicios complementarias detrás de las responsabilidades públicas." } },
+        { "id": "data-families", "title": { "en": "Data and communication", "es": "Datos y comunicación" }, "body": { "en": "Event streaming supports asynchronous collaboration, while relational and vector storage support durable state and relevant recall at a conceptual level.", "es": "El streaming de eventos sostiene la colaboración asíncrona, mientras el almacenamiento relacional y vectorial sostiene el estado duradero y la recuperación relevante a nivel conceptual." } }
+      ]
+    },
+    {
+      "id": "contracts",
+      "title": { "en": "Interaction contracts", "es": "Contratos de interacción" },
+      "summary": { "en": "Describes conceptual HTTP, event, and streaming contracts without publishing exact transport coordinates or private operational details", "es": "Describe contratos conceptuales HTTP, de eventos y de streaming sin publicar coordenadas de transporte exactas ni detalles operativos privados" },
+      "nodeIds": ["web-pwa", "gateway", "soul", "planner", "runtime", "capabilities", "events", "memory", "data"],
+      "edgeIds": ["web-gateway", "gateway-web", "gateway-soul", "soul-gateway", "planner-runtime", "runtime-planner", "runtime-capabilities", "capabilities-runtime", "soul-events", "events-memory", "memory-data"],
+      "flowIds": ["real-time-chat", "tool-assisted", "post-turn-memory"],
+      "sections": [
+        { "id": "synchronous-contracts", "title": { "en": "HTTP and streaming", "es": "HTTP y streaming" }, "body": { "en": "Conceptual request and response exchanges establish work, while streaming relationships carry progressive conversational results.", "es": "Los intercambios conceptuales de solicitud y respuesta establecen trabajo, mientras las relaciones de streaming transportan resultados conversacionales progresivos." } },
+        { "id": "asynchronous-contracts", "title": { "en": "Events and data", "es": "Eventos y datos" }, "body": { "en": "Events decouple follow-up work from the active turn, and data relationships represent approved context moving between public responsibilities.", "es": "Los eventos desacoplan el trabajo posterior del turno activo, y las relaciones de datos representan contexto aprobado que se mueve entre responsabilidades públicas." } }
+      ]
+    }
+  ]
+}
