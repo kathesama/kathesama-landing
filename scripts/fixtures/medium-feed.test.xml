@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Kathesama on Medium</title>
+    <item>
+      <title>Safe Import Example</title>
+      <link>https://medium.com/@kathesama/safe-import-example-abc123def456?source=rss-feed</link>
+      <guid isPermaLink="false">https://medium.com/p/abc123def456</guid>
+      <pubDate>Sat, 14 Mar 2026 21:22:40 GMT</pubDate>
+      <dc:creator>Katherine</dc:creator>
+      <content:encoded><![CDATA[
+        <p>A local-first article with an <a href="https://example.com/guide">external guide</a>.</p>
+        <pre><code class="language-typescript">const answer = 42;</code></pre>
+        <figure><img src="https://cdn-images-1.medium.com/max/1024/1*safe.png?source=rss-feed&amp;tracking=yes#fragment"></figure>
+        <img src="https://medium.com/_/stat?event=post.clientViewed">
+      ]]></content:encoded>
+    </item>
+  </channel>
+</rss>
