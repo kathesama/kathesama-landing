@@ -16,11 +16,19 @@ function renderLanding(language: 'en' | 'es') {
 }
 
 describe('LandingPage', () => {
-  it('preserves the original CTA cross-axis composition', () => {
-    const heroCtaRule = globalStyles.match(/\.hero-cta\s*\{([^}]*)\}/)?.[1];
-
-    expect(heroCtaRule).toBeDefined();
-    expect(heroCtaRule).not.toMatch(/align-self\s*:/);
+  it('uses a two-column high-contrast hero action group that stacks on narrow screens', () => {
+    expect(globalStyles).toMatch(
+      /\.hero-actions\s*\{[^}]*display:\s*grid;[^}]*grid-template-columns:\s*minmax\(0,\s*0\.92fr\)\s+minmax\(0,\s*1\.32fr\);/,
+    );
+    expect(globalStyles).toMatch(
+      /\.hero-cta--project\s*\{[^}]*background:\s*var\(--teal\);/,
+    );
+    expect(globalStyles).toMatch(
+      /\.hero-cta--architecture\s*\{[^}]*background:\s*var\(--gold\);/,
+    );
+    expect(globalStyles).toMatch(
+      /@media\s*\(max-width:\s*560px\)[\s\S]*?\.hero-actions\s*\{[^}]*grid-template-columns:\s*1fr;/,
+    );
   });
 
   it('provides a narrower title scale for 320px viewports', () => {
@@ -84,6 +92,38 @@ describe('LandingPage', () => {
     expect(screen.getByText('Próximamente R4–R5')).toBeVisible();
     expect(screen.getByText('Encuéntrame en')).toBeVisible();
   });
+
+  it.each([
+    {
+      language: 'en' as const,
+      project: 'Explore the project',
+      architecture: 'Explore architecture 9 lenses · 8 interactive flows',
+    },
+    {
+      language: 'es' as const,
+      project: 'Explorar el proyecto',
+      architecture: 'Explorar arquitectura 9 lentes · 8 flujos interactivos',
+    },
+  ])(
+    'exposes ordered high-value hero actions in $language',
+    ({ language, project, architecture }) => {
+      renderLanding(language);
+
+      const projectLink = screen.getByRole('link', { name: project });
+      const architectureLink = screen.getByRole('link', {
+        name: architecture,
+      });
+
+      expect(projectLink).toHaveAttribute('href', '#juana');
+      expect(architectureLink).toHaveAttribute(
+        'href',
+        `/architecture?lang=${language}`,
+      );
+      expect(projectLink.compareDocumentPosition(architectureLink)).toBe(
+        Node.DOCUMENT_POSITION_FOLLOWING,
+      );
+    },
+  );
 
   it('keeps landing content visible without IntersectionObserver callbacks', () => {
     renderLanding('en');
