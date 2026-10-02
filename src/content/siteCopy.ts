@@ -14,6 +14,14 @@ export const siteCopy = {
       es: 'Un asistente de IA personal completamente auto-alojado — sin nube, sin API keys, sin filtración de datos. Corriendo íntegramente en hardware local con arquitectura de nivel productivo.',
     },
     action: { en: 'Explore the project', es: 'Explorar el proyecto' },
+    architectureAction: {
+      en: 'Explore architecture',
+      es: 'Explorar arquitectura',
+    },
+    architectureDetail: {
+      en: '9 lenses · 8 interactive flows',
+      es: '9 lentes · 8 flujos interactivos',
+    },
     scroll: {
       en: 'scroll to discover',
       es: 'desplazarse para descubrir',
